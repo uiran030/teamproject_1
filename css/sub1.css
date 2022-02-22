@@ -1,58 +1,42 @@
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-#main {
-  background-color: #fff;
-  /* padding: 0 40px; */
-}
-
+#main { background-color: #fff; }
 #main h1 {
   text-align: center;
-  /* margin: 15px 0; */
   padding: 20px 0;
   position: relative;
   background: white;
   border-radius: 10px;
 }
-
 #main h1::after {
   position: absolute;
   content: '';
-  bottom: 25%;
+  bottom: 20%;
   left: 10%;
-  width: 950px;
+  width: 80%;
   height: 3px;
   background: rgba(0, 0, 0, 0.4);
 }
-
 #main .image1 {
   background: url(../img/covid1.jpg) no-repeat;
   height: 500px;
-  width:1000px;
+  width: 1000px;
   background-position: top center;
   margin: 0 auto;
   border-radius: 30px;
   background-size: cover;
 }
-
 #main .text {
-  -webkit-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   padding: 30px;
   background: white;
-  width:1000px;
-  margin:30px auto;
+  width: 1000px;
+  margin: 30px auto;
 }
-
 #main .text .box {
   text-align: center;
   padding: 40px 0;
   position: relative;
 }
-
 #main .text .box::after {
   position: absolute;
   content: '';
@@ -63,67 +47,79 @@ a {
   border-radius: 1px;
   background: rgba(0, 0, 0, 0.2);
 }
-
-#main .text .box ul > li {
+#main .text .box ul>li {
   background: #ddd;
   border-radius: 10px;
   margin: 30px 0;
-  -webkit-box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.3);
   width: 100%;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
-#main .text .box > ul > li > a {
+#main .text .box>ul>li>a {
   padding: 20px 0;
   display: block;
   font-size: 18px;
 }
+#main .text .box>ul>li.on { transform: scale(1.05); }
 
-#main .text .box > ul > li.on {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+#main .imgbox { padding: 40px 0; }
+#main .imgbox>p {
+  text-align: center;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5)
 }
-
-#main .imgbox {
-  padding: 40px 0;
-}
-
 #main .imgbox ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 30px
 }
-
-#main .imgbox > ul > li {
+#main .imgbox>ul>li {
   width: 32%;
   margin-right: 2%;
   margin-bottom: 20px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
 }
-
-#main .imgbox > ul > li:nth-child(3n) {
-  margin-right: 0;
-}
-
-#main .imgbox > ul > li.on {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-#main .imgbox ul li img {
-  width: 100%;
-}
-
+#main .imgbox>ul>li:nth-child(3n) { margin-right: 0; }
+#main .imgbox>ul>li.on { transform: scale(1.05); }
+#main .imgbox ul li img { width: 100%; }
 #main .image2 {
   background: url(../img/covid2.jpg) no-repeat;
   height: 300px;
   background-position: center;
   margin: 0 auto;
-  /* border-radius: 30px; */
   background-size: cover;
+}
+
+/* 이미지 클릭 시 (전체화면 모드 디자인) */
+.fxbox{
+  position:fixed;
+  top: 0 ;
+  left: 0 ;
+  bottom: 0 ;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  display:none;
+}
+
+.fxbox .content{
+  position:absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 90vh;
+}
+.fxbox .content img{ height: 100%; }
+.fxbox .content button{
+  position:absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  padding: 15px;
+  background: black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color:white;
+  border: none;
+  cursor: pointer;
 }

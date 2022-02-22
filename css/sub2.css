@@ -1,0 +1,122 @@
+#main { background-color: #fff; padding-bottom: 40px; }
+#main h1 {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  background: white;
+  border-radius: 10px;
+}
+#main h1::after {
+  position: absolute;
+  content: '';
+  bottom: 20%;
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.4);
+}
+#main .image1 {
+  background: url(../img/worldmap.png) no-repeat;
+  height: 500px;
+  background-position: top center;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-size: cover;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.2);
+}
+#main .text {
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 30px;
+  margin: 30px auto 0;
+  background: white;
+}
+#main .text .box {
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+}
+#main .image1, #main .text { width:1000px; }
+#main .text .box::after {
+  position: absolute;
+  content: '';
+  bottom: 0%;
+  left: 5%;
+  width: 90%;
+  height: 1px;
+  border-radius: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#main .text .alert ul li{ position:relative; padding:20px 0; }
+#main .text .alert ul li .circle { 
+  width:100px; 
+  height:100px; 
+  border-radius: 50px; 
+  margin-left:50px; 
+  padding: 10px 0;
+  color:#fff; 
+  font-weight:bold; 
+  display:flex; 
+  flex-direction: column; 
+  justify-content: space-evenly; 
+}
+#main .text .alert ul li .circle .line { 
+  height:1px; 
+  background:rgba(255,255,255,0.4); 
+  width:70px;
+  margin:0 auto;
+}
+#main .text .alert ul li .circle1 { background:#2e507c;}
+#main .text .alert ul li .circle2 {background:#fcc33c}
+#main .text .alert ul li .circle3 {background:#c82613}
+#main .text .alert ul li .circle4 {background:#292929}
+#main .text .alert ul li .circle5 {
+  background:#c82613;
+  background-image:repeating-linear-gradient(-45deg, rgba(255,255,255,0.4), rgba(255,255,255,0.4) 2px, #c82613 2px, #c82613 10px);
+}
+
+#main .text .alert ul li .danger {
+  position:absolute;
+  z-index: 999; 
+  top:50%; left:50%;
+  transform:translate(-50%, -50%);
+  width:100%;
+}
+#main .text .alert ul li .danger h3 { padding-bottom: 10px; font-size:25px }
+#main .text .box ul > li {
+  background: #ddd;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  transition: all 0.3s;
+}
+#main .text .box > ul > li > a {
+  padding: 20px 0;
+  display: block;
+  font-size: 18px;
+}
+#main .text .box > ul > li.on { transform: scale(1.05); }
+
+#main .text .manual{text-align: left;}
+#main .text .manual > ul > li { 
+  padding:20px 0; 
+  display:flex; 
+  align-items: center;
+}
+#main .text .manual .image { margin:0 70px;}
+#main .text .manual .image img { width:100px; }
+
+#main .text .manual .ex {
+  width: 100%;
+  padding-right:70px;
+  word-break: keep-all;
+}
+#main .text .manual .ex h3 { padding:10px 0;}
+#main .text .manual .ex p { line-height: 1.2; font-size: 14px;}
+#main .text .manual .ex .sub {
+  font-size:12px; 
+  color:green; 
+  padding-top:10px;
+}
