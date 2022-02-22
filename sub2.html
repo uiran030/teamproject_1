@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국가별 안전정보(sub-3)</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub2.css">    
+    <script src="./js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <header id="header" class="row">
+        <h1>
+            <a href="./main.html">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </h1>
+        <nav id="nav">
+            <ul class="depth1">
+                <li><a href="./api.html">api사이트</a></li>
+                <li><a href="./sub1.html">전세계 코로나 감염자 현황</a></li>
+                <li><a href="./sub2.html">국가별 안전 여행 정보</a></li>
+                <li><a href="./sub3.html">국가코드별 맵</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main" class="row">
+        <h1>국가별 안전경보</h1>
+        <div class="image1"></div>
+        <div class="text">
+            <div class="box alert">
+                <h2>단계별 여행경보</h2>
+                <ul>
+                    <li>
+                        <div class="circle1 circle">
+                            <p>1단계</p>
+                            <div class="line"></div>
+                            <p>남색경보</p>
+                        </div>
+                        <div class="danger">
+                            <h3>여행유의</h3>
+                            <p>국내 대도시보다 상당히 높은 수준의 위험</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle2 circle">
+                            <p>2단계</p>
+                            <div class="line"></div>
+                            <p>황색경보</p>
+                        </div>
+                        <div class="danger">
+                            <h3>여행자제</h3>
+                            <p>국내 대도시보다 매우 높은 수준의 위험</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle3 circle">
+                            <p>3단계</p>
+                            <div class="line"></div>
+                            <p>적색경보</p>
+                        </div>
+                        <div class="danger">
+                            <h3>출국경고</h3>
+                            <p>국민의 생명과 안전을 위협하는 심각한 수준의 위험</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle4 circle">
+                            <p>4단계</p>
+                            <div class="line"></div>
+                            <p>흑색경보</p>
+                        </div>
+                        <div class="danger">
+                            <h3>여행금지</h3>
+                            <p>국민의 생명과 안전을 위협하는 매우 심각한 수준의 위험</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle5 circle">
+                            <p>특별<br>여행주의보</p>
+                        </div>
+                        <div class="danger">
+                            <p>특별여행주의보 발령에 따른 행동요령은 여행경보 2단계 이상 3단계 이하에 준합니다.<br>
+                                예) (여행예정자) 여행 취소·연기, (체류자) 신변안전 특별유의<br>
+                                특별여행주의보 발령 기간은 90일을 넘지 않습니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="manual box">
+                <ul>
+                    <li>
+                        <div class="image"><img src="./img/passport.png" alt=""></div>
+                        <div class="ex">
+                            <h3>여권 분실</h3>
+                            <p>여권 분실 발견 즉시, 가까운 현지 경찰서를 찾아가 여권분실 증명서를 발급 받습니다.<br>
+                                신분증(주민등록증, 여권사본 등), 경찰서 발행 여권분실증명서 원본, 여권용 컬러사진 2매, 수수료 등을 지참,
+                                재외공관을 방문하여 여권발급신청서(재외공관용), 여권 분실신고서 등을 작성한 후 여권담당자에게 제출합니다.</p>
+                            <p class="sub">※ 여권 분실의 경우를 대비해 여행 전 여권을 복사해 두거나, 여권번호, 발행 연월일, 여행지 우리 공관 주소
+                                및 연락처 등을 메모해둡니다. 단, 여권을 분실했을 경우 해당 여권이 위ㆍ변조되어 범죄에 악용될 수 있다는
+                                점에 유의바랍니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="./img/wallet.png" alt=""></div>
+                        <div class="ex">
+                            <h3>현금 및 수표 분실</h3>
+                            <p>여행경비를 분실ㆍ도난 당한 경우, 신속해외송금지원제도를 이용합니다. (재외공관 & 영사콜센터 문의)<br>
+                                여행자 수표를 분실한 경우, 경찰서에 바로 신고한 후 분실 증명서를 발급받습니다.<br>
+                                여권과 여행자수표 구입 영수증을 가지고 수표 발행은행의 지점에 가서 분실 신고서를 작성하면, 여행자
+                                수표를 재발행 받을 수 있습니다. 이 때, T/C의 고유번호, 종류, 구입일, 은행점명, 서명을 알려줘야 합니다.</p>
+                            <p class="sub">※ 수표의 상하단 모두에 사인한 경우, 전혀 사인을 하지 않은 경우, 수표의 번호를 모르는 경우, 분실 시 즉시
+                                신고하지않은 경우에는 재발급이 되지 않으므로 주의해야합니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="./img/ticket.png" alt=""></div>
+                        <div class="ex">
+                            <h3>항공권 분실</h3>
+                            <p>항공권을 분실한 경우, 해당 항공사의 현지 사무실에 신고하고, 항공권 번호를 알려줍니다.</p>
+                            <p class="sub">※ 분실에 대비해 항공권 번호가 찍혀 있는 부분을 미리 복사해 두고, 구입한 여행사의 연락처도 메모해둡니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image"><img src="./img/luggage.png" alt=""></div>
+                        <div class="ex">
+                            <h3>수하물 분실</h3>
+                            <p>수하물을 분실한 경우, 화물인수증(Claim Tag)을 해당 항공사 직원에게 제시하고, 분실신고서를 작성합니다.
+                                공항에서 짐을 찾을 수 없게 되면, 항공사에서 책임을 지고 배상합니다.</p>
+                            <p class="sub">※ 현지에서 여행 중에 물품을 분실한 경우, 현지 경찰서에 잃어버린 물건에 대한 신고를 하고, 해외여행자
+                                보험에 가입한 경우 현지 경찰서로부터 도난신고서를 발급받은 뒤, 귀국 후 해당 보험회사에 청구합니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>외교부</h2>
+                <ul>
+                    <li><a href="https://www.0404.go.kr/country/manual.jsp" target="_blank">위기상황별 대처 매뉴얼</a></li>
+                    <li><a href="https://www.0404.go.kr/dev/country.mofa?idx=&hash=&chkvalue=no2&stext=&group_idx=&alert_level=0" target="_blank">국가/지역별 여행경보</a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <footer id="footer" class="row">
+        <div class="foot">
+            <img src="./img/f_logo.png" alt="">
+            <p>본 홈페이지의 모든 권리는 외교부에 귀속됩니다.</p>
+        </div>
+    </footer>
+    
+    <script src="./js/sub2.js"></script>
+</body>
+</html>

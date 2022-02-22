@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국가코드별 맵</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub3.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <header id="header" class="row">
+        <h1>
+            <a href="./main.html">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </h1>
+        <nav id="nav">
+            <ul class="depth1">
+                <li><a href="./api.html">api사이트</a></li>
+                <li><a href="./sub1.html">전세계 코로나 감염자 현황</a></li>
+                <li><a href="./sub2.html">국가별 안전 여행 정보</a></li>
+                <li><a href="./sub3.html">국가코드별 맵</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main" class="row">
+        <h1>국가코드별 맵</h1>
+        <div class="image1"></div>
+        <div class="text">
+            <div class="box">
+                <h2>북미</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/United+States/@31.6442339,-132.5118407,3z/data=!3m1!4b1!4m5!3m4!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891" target="_blank">
+                            <div class="img">
+                                <img src="./img/미합중국 flag.gif" alt="미합중국 flag" >
+                            </div>
+                            <span>미합중국 (+1)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Canada/@50.7552608,-130.3392647,3z/data=!3m1!4b1!4m5!3m4!1s0x4b0d03d337cc6ad9:0x9968b72aa2438fa5!8m2!3d56.130366!4d-106.346771" target="_blank">
+                            <div class="img">
+                                <img src="./img/캐나다 flag.gif" alt="캐나다 flag">
+                            </div>
+                            <span>캐나다 (+1)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>중남미</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Guyana/data=!4m2!3m1!1s0x8dafefaf60d8c2b3:0x48e38867b6e54440?sa=X&ved=2ahUKEwjTtef9l_71AhXBEogKHRrIAakQ8gF6BAhFEAE" target="_blank">
+                            <div class="img">
+                                <img src="./img/가이아나공화국 flag.gif" alt="가이아나공화국 flag">
+                            </div>
+                            <span>가이아나 (+592)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Guatemala/data=!4m2!3m1!1s0x8588135036e7506b:0x35982b375b84d5bb?sa=X&ved=2ahUKEwjJrKfNmP71AhVFVPUHHZXtCAcQ8gF6BAgcEAE" target="_blank">
+                            <div class="img">
+                                <img src="./img/과테말라공화국 flag.gif" alt="가이아나공화국 flag">
+                            </div>
+                            <span>과테말라 (+502)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Grenada/data=!4m2!3m1!1s0x8c381789f4877bd1:0x36d8c7015a1f4f8e?sa=X&ved=2ahUKEwi9hbfimf71AhW9IqYKHRvDDZEQ8gF6BAgcEAE" target="_blank">
+                            <div class="img">
+                                <img src="./img/그레나다 flag.gif" alt="그레나다 flag">
+                            </div>
+                            <span> 그레나다<br>(+1-473)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Nicaragua/data=!4m2!3m1!1s0x8f10c200ceff22cd:0xc8faa7e53fac15b5?sa=X&ved=2ahUKEwiE5rKpm_71AhW8sFYBHea2DWUQ8gF6BAgZEAE" target="_blank">
+                            <div class="img">
+                                <img src="./img/니카라과공화국 flag.gif" alt="니카라과 flag">
+                            </div>
+                            <span> 니카라과 (+505)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Dominican+Republic/data=!4m2!3m1!1s0x8eaf8838def1b6f5:0xa6020f24060df7e0?sa=X&ved=2ahUKEwjPjrvRm_71AhXzk1YBHeX6CC8Q8gF6BAgXEAE" target="_blank">
+                            <div class="img"><img src="./img/도미니카공화국 flag.bmp" alt="도미니카공화국 flag"></div>
+                            <span>도미니카공화국 (+1-809)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Dominica/data=!4m2!3m1!1s0x8c14d2faf2155a15:0x49b39109053afd3c?sa=X&ved=2ahUKEwi16b-NnP71AhX2wosBHcpcCZAQ8gF6BAgeEAE" target="_blank">
+                            <div class="img"><img src="./img/도미니카연방 flag.gif" alt="도미니카 연방 flag"></div>
+                            <span>도미니카연방 (+1-767)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Mexico/data=!4m2!3m1!1s0x84043a3b88685353:0xed64b4be6b099811?sa=X&ved=2ahUKEwj1zum9nP71AhWOvpQKHco_BQ8Q8gF6BAgaEAE" target="_blank">
+                            <div class="img"><img src="./img/멕시코합중국 flag.gif" alt="멕시코 flag"></div>
+                            <span>멕시코 (+52)</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Barbados/data=!4m2!3m1!1s0x8c43f1fbae321aa3:0xeec51b38cf4362b?sa=X&ved=2ahUKEwiV6PTtnP71AhUDJaYKHZMIAY8Q8gF6BAgQEAE" target="_blank">
+                            <div class="img"><img src="./img/바베이도스 flag.gif" alt="바베이도스 flag"></div>
+                            <span>바베이도스<br>(+1-246)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/The+Bahamas/data=!4m2!3m1!1s0x88d69a3bb2480f3d:0x133eb4836ac779e5?sa=X&ved=2ahUKEwj1-NeMnf71AhVuyosBHZSXARsQ8gF6BAgeEAE" target="_blank">
+                            <div class="img"><img src="./img/바하마 flag.gif" alt="바하마 flag"></div>
+                            <span>바하마 (+1-242)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Venezuela/data=!4m2!3m1!1s0x8c2853cb36cbd801:0xdca0f2587cd54dd3?sa=X&ved=2ahUKEwidzpvRnf71AhUTxpQKHfBRCJ4Q8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/베네수엘라볼리바르공화국 flag.gif" alt="베네수엘라 flag"></div>
+                            <span>베네수엘라 (+58)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Belize/data=!4m2!3m1!1s0x8f5c5b3ec112faf9:0xf64a8a4d3f1ee34e?sa=X&ved=2ahUKEwjD3Nr1nf71AhWislYBHV17CocQ8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/벨리즈 flag.gif" alt="벨리즈 flag"></div>
+                            <span>벨리즈 (+501)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Bolivia/data=!4m2!3m1!1s0x915edf8977bba295:0x1c9ec2bb0115edbf?sa=X&ved=2ahUKEwi7vJ6Onv71AhXUEYgKHY0IDTMQ8gF6BAgbEAE" target="_blank">
+                            <div class="img"><img src="./img/볼리비아다민족국 flag.gif" alt="볼리비아 flag"></div>
+                            <span>볼리비아 (+591)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Brazil/data=!4m2!3m1!1s0x9c59c7ebcc28cf:0x295a1506f2293e63?sa=X&ved=2ahUKEwjju4O0nv71AhUDCd4KHV2JCxEQ8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/브라질연방공화국 flag.gif" alt="브라질 flag"></div>
+                            <span>브라질 (+55)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/St+Lucia/data=!4m2!3m1!1s0x8c406065f12da31d:0x6e7486c4e8399df5?sa=X&ved=2ahUKEwjA4YDSnv71AhXGC94KHZ-MBfIQ8gF6BAgeEAE" target="_blank">
+                            <div class="img"><img src="./img/세인트루시아 flag.bmp" alt="세인트루시아 flag"></div>
+                            <span>세인트루시아 (+1-758)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/St+Vincent+and+the+Grenadines/data=!4m2!3m1!1s0x8c40ace29e3935bb:0x31fdd3e88dd2a1b1?sa=X&ved=2ahUKEwie97f0nv71AhUTxWEKHawkAJUQ8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/세인트빈센트그레나딘 flag.gif" alt="세인트빈센트그레나딘 flag"></div>
+                            <span>세인트빈센트그레나딘<br>(+1-784)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/St+Kitts+%26+Nevis/data=!4m2!3m1!1s0x8c12196ec68a720d:0xdee99ac69a1d86e8?sa=X&ved=2ahUKEwiIvZain_71AhXOzmEKHcZ-DVcQ8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/세인트키츠네비스연방 flag.gif" alt="세인트키츠네비스 flag"></div>
+                            <span>세인트키츠네비스 (+1-869)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Suriname/data=!4m2!3m1!1s0x8d0836d5d9d3d551:0x1037e1c0712936b2?sa=X&ved=2ahUKEwiOp_y_n_71AhUVAt4KHXgTDTEQ8gF6BAgcEAE" target="_blank">
+                            <div class="img"><img src="./img/수리남공화국 flag.gif" alt="수리남 flag"></div>
+                            <span>수리남 (+597)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Argentina/data=!4m2!3m1!1s0x95bccaf5f5fdc667:0x3d2f77992af00fa8?sa=X&ved=2ahUKEwii_uzZn_71AhXJEHAKHYukDD8Q8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/아르헨티나공화국 flag.gif" alt="아르헨티나 flag"></div>
+                            <span>아르헨티나 (+54)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Haiti/data=!4m2!3m1!1s0x8eb6c6f37fcbbb11:0xb51438b24c54f6d3?sa=X&ved=2ahUKEwj00J3vn_71AhUJ62EKHTGwBkEQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/아이티공화국 flag.gif" alt="아이티 flag"></div>
+                            <span>아이티 (+509)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Antigua+and+Barbuda/data=!4m2!3m1!1s0x8c0d6eb96db8d1c1:0x276a3788e18b7994?sa=X&ved=2ahUKEwiCzZ2KoP71AhUUed4KHSi1AFkQ8gF6BAgfEAE" target="_blank">
+                            <div class="img"><img src="./img/앤티가바부다 flag.gif" alt="앤티가바부다 flag"></div>
+                            <span>앤티가바부다 (+1-268)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Ecuador/data=!4m2!3m1!1s0x902387dda89a4bd5:0x9d76af04119c3702?sa=X&ved=2ahUKEwiGrqijoP71AhUH62EKHYdzCacQ8gF6BAgbEAE" target="_blank">
+                            <div class="img"><img src="./img/에콰도르공화국 flag.gif" alt="에콰도르 flag"></div>
+                            <span>에콰도르 (+593)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/El+Salvador/data=!4m2!3m1!1s0x8f6327a659640657:0x6f9a16eb98854832?sa=X&ved=2ahUKEwji1OjEoP71AhVOD94KHUc8DzUQ8gF6BAgbEAE" target="_blank">
+                            <div class="img"><img src="./img/엘살바도르공화국 flag.bmp" alt="엘살바도를 flag"></div>
+                            <span>엘살바도르 (+503)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Honduras/data=!4m2!3m1!1s0x8f6a751a73b731cf:0x7ed1de82b6fb8264?sa=X&ved=2ahUKEwi22bDboP71AhVBat4KHUnrAKoQ8gF6BAgbEAE" target="_blank">
+                            <div class="img"><img src="./img/온두라스공화국 flag.gif" alt="온두라스 flag"></div>
+                            <span>온두라스 (+504)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Uruguay/data=!4m2!3m1!1s0x9575073afb5fde09:0x4a5596616016524a?sa=X&ved=2ahUKEwix67TxoP71AhUL62EKHSbODAAQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/우루과이동방공화국 flag.gif" alt="우루과이 flag"></div>
+                            <span>우루과이 (+598)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Jamaica/data=!4m2!3m1!1s0x8eda2a1bc6cf719d:0x59a0d1c0b5120efa?sa=X&ved=2ahUKEwiShLWKof71AhVF-mEKHWrOB5oQ8gF6BAgbEAE" target="_blank">
+                            <div class="img"><img src="./img/자메이카 flag.gif" alt="자메이카 flag"></div>
+                            <span>자메이카 (+1-876)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Chile/data=!4m2!3m1!1s0x9662c5410425af2f:0x505e1131102b91d?sa=X&ved=2ahUKEwjzq_Wzof71AhWLwZQKHTvrDrUQ8gF6BAgbEAE" target="_blank">
+                            <div class="img"><img src="./img/칠레공화국 flag.gif" alt="칠레 flag"></div>
+                            <span>칠레 (+56)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Costa+Rica/data=!4m2!3m1!1s0x8f92e56221acc925:0x6254f72535819a2b?sa=X&ved=2ahUKEwja7-raof71AhXQVPUHHU77C_kQ8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/코스타리카공화국 flag.gif" alt="코스타리카 flag"></div>
+                            <span>코스타리카 (+506)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Colombia/data=!4m2!3m1!1s0x8e15a43aae1594a3:0x9a0d9a04eff2a340?sa=X&ved=2ahUKEwi74vesov71AhVEs1YBHdeMDWQQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/콜롬비아공화국 flag.gif" alt="콜롬비아 flag"></div>
+                            <span>콜롬비아 (+57)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Cuba/data=!4m2!3m1!1s0x88cd49070f7a4cb5:0x798cf7529110a41a?sa=X&ved=2ahUKEwjXt6LFov71AhW8r1YBHcnDCWMQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/쿠바공화국 flag.gif" alt="쿠바 flag"></div>
+                            <span>쿠바 (+53)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Trinidad+and+Tobago/data=!4m2!3m1!1s0x8c3607976350b6c5:0xff082855c639f127?sa=X&ved=2ahUKEwjqt9fgov71AhWmrlYBHUzoBWUQ8gF6BAgiEAE" target="_blank">
+                            <div class="img"><img src="./img/트리니다드토바고공화국 flag.gif" alt="트리니다드토바고 flag"></div>
+                            <span>트리니다드토바고 (+868)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Panama/data=!4m2!3m1!1s0x8fa61583c8be2be3:0x79eee04d1fa59bcf?sa=X&ved=2ahUKEwjeiuT_ov71AhX7s1YBHZTeDF8Q8gF6BAgQEAE" target="_blank">
+                            <div class="img"><img src="./img/파나마공화국 flag.gif" alt="파나마 flag"></div>
+                            <span>파나마 (+507)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Paraguay/data=!4m2!3m1!1s0x945c083490f13d63:0xb3faff611d582ef3?sa=X&ved=2ahUKEwjG0dGVo_71AhXQsFYBHZdmAYAQ8gF6BAgYEAE" target="_blank">
+                            <div class="img"><img src="./img/파라과이공화국 flag.gif" alt="파라과이 flag"></div>
+                            <span>파라과이 (+595)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Peru/data=!4m2!3m1!1s0x9105c850c05914f5:0xf29e011279210648?sa=X&ved=2ahUKEwjMhK6po_71AhVhs1YBHayeCGQQ8gF6BAgeEAE" target="_blank">
+                            <div class="img"><img src="./img/페루공화국 flag.gif" alt="페루 flag"></div>
+                            <span>페루 (+51)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>러시아 &middot; 중앙아시아</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Russia/data=!4m2!3m1!1s0x453c569a896724fb:0x1409fdf86611f613?sa=X&ved=2ahUKEwjWgdqXpf71AhVGs1YBHUqXBGIQ8gF6BAgaEAE" target="_blank">
+                            <div class="img"><img src="./img/러시아연방 flag.gif" alt="러시아 flag"></div>
+                            <span>러시아 (+7)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Uzbekistan/data=!4m2!3m1!1s0x38ae8b20a5d676b1:0xca0a6dad7e841e20?sa=X&ved=2ahUKEwiLyOWQpv71AhWFsVYBHcCPBDcQ8gF6BAgYEAE" target="_blank">
+                            <div class="img"><img src="./img/우즈베키스탄공화국 flag.gif" alt="우즈베키스탄 flag"></div>
+                            <span>우즈베키스탄 (+998)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Kazakhstan/data=!4m2!3m1!1s0x38a91007ecfca947:0x5f7b842fe4b30e1b?sa=X&ved=2ahUKEwj4ru2rpv71AhUrrVYBHR6OCnIQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/카자흐스탄공화국 flag.gif" alt="카자흐스탄 flag"></div>
+                            <span>카자흐스탄 (+7)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Kyrgyzstan/data=!4m2!3m1!1s0x3897381dfce927f3:0x281058b74e88c433?sa=X&ved=2ahUKEwj9qvHapv71AhX2s1YBHbgBBXIQ8gF6BAgbEAE" target="_blank">
+                            <div class="img"><img src="./img/키르기스스탄 flag.gif" alt="키르기스스탄 flag"></div>
+                            <span>키르기스스탄 (+996)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Tajikistan/data=!4m2!3m1!1s0x38b176737abcb3cd:0x25c331844f1988b5?sa=X&ved=2ahUKEwjd9ajypv71AhVKMN4KHQJxCTQQ8gF6BAgQEAE" target="_blank">
+                            <div class="img"><img src="./img/타지키스탄공화국 flag.gif" alt="타지키스탄 flag"></div>
+                            <span>타지키스탄 (+992)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Turkmenistan/data=!4m2!3m1!1s0x3f65cb5574bc6ccb:0x7edd826b4169a491?sa=X&ved=2ahUKEwiagP2Lp_71AhULCd4KHUiSBU4Q8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/투르크메니스탄 flag.gif" alt="투르크메니스탄 flag"></div>
+                            <span>투르크메니스탄 (+993)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>동북아시아</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Taiwan/data=!4m2!3m1!1s0x346ef3065c07572f:0xe711f004bf9c5469?sa=X&ved=2ahUKEwj6r_PMqf71AhUVsVYBHXP_BX0Q8gF6BAgsEAE" target="_blank">
+                            <div class="img"><img src="./img/대만 flag.png" alt="대만 flag"></div>
+                            <span>대만 (+886)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/South+Korea/data=!4m2!3m1!1s0x356455ebcb11ba9b:0x91249b00ba88db4b?sa=X&ved=2ahUKEwjisdHwqf71AhWBsFYBHfMNAWkQ8gF6BAgXEAE" target="_blank">
+                            <div class="img"><img src="./img/대한민국 flag.png" alt="대한민국 flag"></div>
+                            <span> 대한민국 (+82)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Mongolia/data=!4m2!3m1!1s0x3627050669aa6d4b:0xe0dd213937e6e096?sa=X&ved=2ahUKEwiF_6qJqv71AhXrslYBHTXjB2QQ8gF6BAgQEAE" target="_blank">
+                            <div class="img"><img src="./img/몽골 flag.gif" alt="몽골 flag"></div>
+                            <span>몽골 (+976)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Japan/data=!4m2!3m1!1s0x34674e0fd77f192f:0xf54275d47c665244?sa=X&ved=2ahUKEwiU-8Gcqv71AhXkk1YBHR46CWoQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/일본 flag.gif" alt="일본 flag"></div>
+                            <span>일본 (+81)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/China/data=!4m2!3m1!1s0x31508e64e5c642c1:0x951daa7c349f366f?sa=X&ved=2ahUKEwjmrsmqqv71AhUKklYBHRZXB2MQ8gF6BAgaEAE" target="_blank">
+                            <div class="img"><img src="./img/중국 flag.gif" alt="중국 flag"></div>
+                            <span>중국 (+86)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>동남아시아</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Timor-Leste/data=!4m2!3m1!1s0x2cfde50986e4a129:0x3e5c68387e85b3c?sa=X&ved=2ahUKEwie4fGJrP71AhWXE4gKHa-DDFcQ8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/동티모르민주공화국 flag.gif" alt="동티모르 flag"></div>
+                            <span>동티모르 (+670)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Laos/data=!4m2!3m1!1s0x31149057b0824589:0xec592481f99cd81?sa=X&ved=2ahUKEwi9jMKvrP71AhUEat4KHfkZA2UQ8gF6BAgREAE" target="_blank">
+                            <div class="img"><img src="./img/라오인민민주공화국 flag.gif" alt="라오스 flag"></div>
+                            <span>라오스 (+856)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Malaysia/@4.0892925,100.570574,5z/data=!3m1!4b1!4m5!3m4!1s0x3034d3975f6730af:0x745969328211cd8!8m2!3d4.210484!4d101.975766" target="_blank">
+                            <div class="img"><img src="./img/말레이시아 flag.gif" alt="말레이시아 flag"></div>
+                            <span>말레이시아 (+60)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Myanmar+(Burma)/data=!4m2!3m1!1s0x305652a7714e2907:0xba7b0ee41c622b11?sa=X&ved=2ahUKEwjOqra7rf71AhUOslYBHXSZCGsQ8gF6BAgcEAE" target="_blank">
+                            <div class="img"><img src="./img/미얀마연방공화국 flag.gif" alt="미얀마 flag"></div>
+                            <span>미얀마 (+95)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Vietnam/data=!4m2!3m1!1s0x31157a4d736a1e5f:0xb03bb0c9e2fe62be?sa=X&ved=2ahUKEwiXyoDVrf71AhV2slYBHSDTCWUQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/베트남사회주의공화국 flag.gif" alt="베트남 flag"></div>
+                            <span>베트남 (+84)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Brunei/data=!4m2!3m1!1s0x3218994b04b8b9d1:0x5dfe3580dd09dad6?sa=X&ved=2ahUKEwjjzNT7rf71AhXzklYBHT95DHwQ8gF6BAgaEAE" target="_blank">
+                            <div class="img"><img src="./img/브루나이다루살람 flag.gif" alt="브루나이 flag"></div>
+                            <span>브루나이 (+673)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Singapore/data=!4m2!3m1!1s0x31da11238a8b9375:0x887869cf52abf5c4?sa=X&ved=2ahUKEwimtO2drv71AhU3h1YBHYlfCnEQ8gF6BAgYEAE" target="_blank">
+                            <div class="img"><img src="./img/싱가포르공화국 flag.gif" alt="싱가폴 flag"></div>
+                            <span>싱가폴 (+65)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Indonesia/data=!4m2!3m1!1s0x2c4c07d7496404b7:0xe37b4de71badf485?sa=X&ved=2ahUKEwioneCxrv71AhXErlYBHYMxD2IQ8gF6BAgaEAE" target="_blank">
+                            <div class="img"><img src="./img/인도네시아공화국 flag.gif" alt="인도네시아 flag"></div>
+                            <span>인도네시아 (+62)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Cambodia/data=!4m2!3m1!1s0x310787bfd4dc3743:0xe4b7bfe089f41253?sa=X&ved=2ahUKEwiSrczGr_71AhVorlYBHazJB2QQ8gF6BAgaEAE" target="_blank">
+                            <div class="img"><img src="./img/캄보디아왕국 flag.jpg" alt="캄보디아 flag"></div>
+                            <span>캄보디아 (+855)</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Thailand/data=!4m2!3m1!1s0x304d8df747424db1:0x9ed72c880757e802?sa=X&ved=2ahUKEwjb_evar_71AhVorlYBHazJB2QQ8gF6BAgTEAE" target="_blank">
+                            <div class="img"><img src="./img/타이왕국 flag.gif" alt="타이 flag"></div>
+                            <span>타이 (+66)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Philippines/data=!4m2!3m1!1s0x324053215f87de63:0x784790ef7a29da57?sa=X&ved=2ahUKEwj31bTyr_71AhW6U_UHHe2lARsQ8gF6BAgQEAE" target="_blank">
+                            <div class="img"><img src="./img/필리핀공화국 flag.gif" alt="필리핀 flag"></div>
+                            <span>필리핀 (+63)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>서남아시아태평양</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Nauru/data=!4m2!3m1!1s0x6f7d1c1f1de45b4d:0x59d99df4c5d40a81?sa=X&ved=2ahUKEwjFr8rWxf71AhUbzIsBHV-RA_EQ8gF6BAg0EAE" target="_blank">
+                            <div class="img"><img src="./img/나우루공화국 flag.gif" alt="나우르 flag"></div>
+                            <span>나우르 (+674)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Nepal/data=!4m2!3m1!1s0x3995e8c77d2e68cf:0x34a29abcd0cc86de?sa=X&ved=2ahUKEwis0KmG3v71AhWrHqYKHSeTAwIQ8gF6BAgrEAE" target="_blank">
+                            <div class="img"><img src="./img/네팔연방민주공화국 flag.gif" alt="네팔 flag"></div>
+                            <span>네팔 (+977)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/New+Zealand/data=!4m2!3m1!1s0x6d2c200e17779687:0xb1d618e2756a4733?sa=X&ved=2ahUKEwiXnaiq3v71AhVXZ94KHT8HCogQ8gF6BAgYEAE" target="_blank">
+                            <div class="img"><img src="./img/뉴질랜드 flag.gif" alt="뉴질랜드 flag"></div>
+                            <span>뉴질랜드 (+64)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Niue/data=!4m2!3m1!1s0x719d252a376eb73b:0x914278347bdc8b18?sa=X&ved=2ahUKEwiy15nF3v71AhWU4mEKHf_CDu8Q8gF6BAghEAE" target="_blank">
+                            <div class="img"><img src="./img/니우에 flag.png" alt=""></div>
+                            <span>뉴질랜드 (+683)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Marshall+Islands/data=!4m2!3m1!1s0x650119b22129ca2b:0x8b3e03e8aa09b776?sa=X&ved=2ahUKEwjDzuva3v71AhXLDt4KHVLNAIoQ8gF6BAgjEAE" target="_blank">
+                            <div class="img"><img src="./img/마셜제도공화국 flag.gif" alt=""></div>
+                            <span>마셜제도 (+692)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Federated+States+of+Micronesia/data=!4m2!3m1!1s0x65d9b5c5ac58c813:0x547a8dcdfaa46525?sa=X&ved=2ahUKEwibs5KH3_71AhWZeN4KHR7bAikQ8gF6BAgkEAE" target="_blank">
+                            <div class="img"><img src="./img/마이크로네시아연방 flag.gif" alt=""></div>
+                            <span>마이크로네시아 (+691)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Maldives/data=!4m2!3m1!1s0x24b599bfaafb7bbd:0x414509e181956289?sa=X&ved=2ahUKEwiq6tua3_71AhWWBd4KHQzvCM8Q8gF6BAggEAE" target="_blank">
+                            <div class="img"><img src="./img/몰디브공화국 flag.gif" alt=""></div>
+                            <span>몰디브 (+960)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Vanuatu/data=!4m2!3m1!1s0x6e89605ec8926013:0x348339cfbed0266a?sa=X&ved=2ahUKEwjIzIKx3_71AhVaEIgKHck2BNAQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/바누아투공화국 flag.gif" alt=""></div>
+                            <span>바누아투 (+678)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Bangladesh/data=!4m2!3m1!1s0x30adaaed80e18ba7:0xf2d28e0c4e1fc6b?sa=X&ved=2ahUKEwj5wZDI3_71AhUm7GEKHXy-CeMQ8gF6BAgcEAE" target="_blank">
+                            <div class="img"><img src="./img/방글라데시인민공화국 flag.gif" alt=""></div>
+                            <span>방글라데시 (+880)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Bhutan/data=!4m2!3m1!1s0x375b92a573c595cf:0xbb0cac652836bcda?sa=X&ved=2ahUKEwiL85DX3_71AhVPad4KHQYMA2gQ8gF6BAgeEAE" target="_blank">
+                            <div class="img"><img src="./img/부탄왕국 flag.gif" alt=""></div>
+                            <span>부탄 (+975)</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Samoa/data=!4m2!3m1!1s0x71a513a364ec1003:0xa6870c9674617872?sa=X&ved=2ahUKEwjl7onn3_71AhXRAN4KHXDGDDwQ8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/사모아독립국 flag.gif" alt=""></div>
+                            <span>사모아 (+685)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Solomon+Islands/data=!4m2!3m1!1s0x68d351e0555009d1:0xb44cc0a017442980?sa=X&ved=2ahUKEwi7jPWO4P71AhWb4GEKHQhCB2oQ8gF6BAgSEAE" target="_blank">
+                            <div class="img"><img src="./img/솔로몬제도 flag.gif" alt=""></div>
+                            <span>솔로몬제도 (+677)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Sri+Lanka/data=!4m2!3m1!1s0x3ae2593cf65a1e9d:0xe13da4b400e2d38c?sa=X&ved=2ahUKEwihy8ug4P71AhUTxWEKHawkAJUQ8gF6BAgQEAE" target="_blank">
+                            <div class="img"><img src="./img/스리랑카민주사회주의공화국 flag.gif" alt=""></div>
+                            <span>스리랑카 (+94)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Afghanistan/data=!4m2!3m1!1s0x38d16eb6f8ff026d:0xf3b5460dbe96da78?sa=X&ved=2ahUKEwj56s-14P71AhVOZ94KHSuUDOEQ8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/아프가니스탄이슬람공화국 flag.gif" alt=""></div>
+                            <span>아프가니스탄 (+93)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/India/data=!4m2!3m1!1s0x30635ff06b92b791:0xd78c4fa1854213a6?sa=X&ved=2ahUKEwj5wanb4P71AhWRC94KHWsXCD8Q8gF6BAgYEAE" target="_blank">
+                            <div class="img"><img src="./img/인도공화국 flag.gif" alt=""></div>
+                            <span>인도 (+91)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Cook+Islands/data=!4m2!3m1!1s0x71548aefb97bdedd:0x24ca50e8808b4d8?sa=X&ved=2ahUKEwjapZHt4P71AhUJFogKHdLNC1MQ8gF6BAgcEAE" target="_blank">
+                            <div class="img"><img src="./img/쿡제도 flag.gif" alt=""></div>
+                            <span>쿡제도 (+682)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Kiribati/data=!4m2!3m1!1s0x65647c91c2028703:0x84327d040152c307?sa=X&ved=2ahUKEwi504qL4f71AhWgQPUHHQJ8AhgQ8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/키리바시공화국 flag.gif" alt=""></div>
+                            <span>키리바시 (+686)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Tonga/data=!4m2!3m1!1s0x7193b644bb9fd01d:0xf36dcccac55ee2a9?sa=X&ved=2ahUKEwj6joib4f71AhUYD94KHfTkAJYQ8gF6BAgXEAE" target="_blank">
+                            <div class="img"><img src="./img/통가왕국 flag.gif" alt=""></div>
+                            <span>통가 (+676)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Tuvalu/data=!4m2!3m1!1s0x6fc19cb959b1a04d:0x8f6754680707122e?sa=X&ved=2ahUKEwiB9-6w4f71AhXDz2EKHZ-BBZoQ8gF6BAgcEAE" target="_blank"> 
+                            <div class="img"><img src="./img/투발루 flag.gif" alt=""></div>
+                            <span>투발루 (+688)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Pakistan/data=!4m2!3m1!1s0x38db52d2f8fd751f:0x46b7a1f7e614925c?sa=X&ved=2ahUKEwig9IjJ4f71AhUGdXAKHYBRDbsQ8gF6BAgcEAE" target="_blank">
+                            <div class="img"><img src="./img/파키스탄회교공화국 flag.gif" alt=""></div>
+                            <span>파키스탄 (+92)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Papua+New+Guinea/data=!4m2!3m1!1s0x6859e8afbf0e9eaf:0xdaf0e50d8e9c127a?sa=X&ved=2ahUKEwjWh5jZ4f71AhUYQPUHHbdjB6QQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/파푸아뉴기니독립국 flag.gif" alt=""></div>
+                            <span>파푸아뉴기니 (+675)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Palau/data=!4m2!3m1!1s0x328445b4a2af0399:0x12ed1edd39a1ebbb?sa=X&ved=2ahUKEwjFpJLu4f71AhXIxGEKHf63C2sQ8gF6BAgfEAE" target="_blank">
+                            <div class="img"><img src="./img/팔라우공화국 flag.gif" alt=""></div>
+                            <span>팔라우 (+680)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Fiji/data=!4m2!3m1!1s0x6e1990fd703cdc5d:0x9e9c319946ef5b93?sa=X&ved=2ahUKEwjw59H84f71AhVEEogKHUCrB98Q8gF6BAgeEAE" target="_blank">
+                            <div class="img"><img src="./img/피지공화국 flag.gif" alt=""></div>
+                            <span>피지 (+679)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Australia/data=!4m2!3m1!1s0x2b2bfd076787c5df:0x538267a1955b1352?sa=X&ved=2ahUKEwjQ7NmN4v71AhXCB94KHQ80BVEQ8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/호주 flag.gif" alt=""></div>
+                            <span>호주 (+61)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>유럽</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/00120+Vatican+City/data=!4m2!3m1!1s0x1325890a57d42d3d:0x94f9ab23a7eb0?sa=X&ved=2ahUKEwiXsdvu6f71AhUHe94KHQ-JAWYQ8gF6BAgmEAE" target="_blank">
+                            <div class="img"><img src="./img/교황청 flag.gif" alt=""></div>
+                            <span>교황청 (+379)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Greece/data=!4m2!3m1!1s0x135b4ac711716c63:0x363a1775dc9a2d1d?sa=X&ved=2ahUKEwimtKvr9P71AhUNAIgKHZudAqMQ8gF6BAgfEAE" target="_blank">
+                            <div class="img"><img src="./img/그리스공화국 flag.gif" alt=""></div>
+                            <span>그리스 (+30)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Netherlands/data=!4m2!3m1!1s0x47c609c3db87e4bb:0xb3a175ceffbd0a9f?sa=X&ved=2ahUKEwjv-ob99P71AhUFUd4KHfosDnwQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/네덜란드왕국 flag.gif" alt=""></div>
+                            <span>네덜란드 (+31)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Norway/data=!4m2!3m1!1s0x461268458f4de5bf:0xa1b03b9db864d02b?sa=X&ved=2ahUKEwihv5aj9f71AhW6SfUHHTlLAv8Q8gF6BAgeEAE" target="_blank">
+                            <div class="img"><img src="./img/노르웨이왕국 flag.gif" alt=""></div>
+                            <span>노르웨이 (+47)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Denmark/data=!4m2!3m1!1s0x464b27b6ee945ffb:0x528743d0c3e092cd?sa=X&ved=2ahUKEwjA4cOy9f71AhUFIIgKHXJtCk4Q8gF6BAgbEAE" target="_blank">
+                            <div class="img"><img src="./img/덴마크왕국 flag.gif" alt=""></div>
+                            <span>덴마크 (+45)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Germany/data=!4m2!3m1!1s0x479a721ec2b1be6b:0x75e85d6b8e91e55b?sa=X&ved=2ahUKEwjazYTB9f71AhUBQPUHHSaVBZgQ8gF6BAgYEAE" target="_blank">
+                            <div class="img"><img src="./img/독일연방공화국 flag.gif" alt=""></div>
+                            <span>독일 (+49)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Latvia/data=!4m2!3m1!1s0x46e930677b8a9afd:0xcfcd68f2fc10?sa=X&ved=2ahUKEwiG2_Ow9_71AhVVEogKHYu3BoUQ8gF6BAgaEAE" target="_blank">
+                            <div class="img"><img src="./img/라트비아공화국 flag.gif" alt=""></div>
+                            <span>라트비아 (+371)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Romania/data=!4m2!3m1!1s0x40b1ff26958976c3:0x84ef4f92a804b194?sa=X&ved=2ahUKEwjV78jj9_71AhWYEogKHeGtACIQ8gF6BAgcEAE" target="_blank">
+                            <div class="img"><img src="./img/루마니아 flag.gif" alt=""></div>
+                            <span>루마니아 (+40)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Luxembourg/data=!4m2!3m1!1s0x479545b9ca212147:0x64db60f602d392ef?sa=X&ved=2ahUKEwiOyeDz9_71AhVTdd4KHQ1mBDwQ8gF6BAgcEAE" target="_blank">
+                            <div class="img"><img src="./img/룩셈부르크대공국 flag.gif" alt=""></div>
+                            <span>룩셈부르크 (+352)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Belgium/data=!4m2!3m1!1s0x47c17d64edf39797:0x47ebf2b439e60ff2?sa=X&ved=2ahUKEwjW4OiH-P71AhXVd94KHcGtACAQ8gF6BAgbEAE" target="_blank">
+                            <div class="img"><img src="./img/벨기에왕국 flag.gif" alt=""></div>
+                            <span>벨기에 (+32)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Sweden/data=!4m2!3m1!1s0x465cb2396d35f0f1:0x22b8eba28dad6f62?sa=X&ved=2ahUKEwjOvrqZ-P71AhWJa94KHdslApkQ8gF6BAgZEAE" target="_blank">
+                            <div class="img"><img src="./img/스웨덴왕국 flag.gif" alt=""></div>
+                            <span>스웨덴 (+46)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Switzerland/data=!4m2!3m1!1s0x478c64ef6f596d61:0x5c56b5110fcb7b15?sa=X&ved=2ahUKEwiPqf2p-P71AhUPxGEKHXMMAnIQ8gF6BAghEAE" target="_blank">
+                            <div class="img"><img src="./img/스위스연방 flag.gif" alt=""></div>
+                            <span>스위스 (+41)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Spain/data=!4m2!3m1!1s0xc42e3783261bc8b:0xa6ec2c940768a3ec?sa=X&ved=2ahUKEwjLnoG9-P71AhXL62EKHVbRASgQ8gF6BAgYEAE" target="_blank">
+                            <div class="img"><img src="./img/스페인왕국 flag.gif" alt=""></div>
+                            <span>스페인 (+34)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Iceland/data=!4m2!3m1!1s0x48d22b52a3eb6043:0x6f8a0434e5c1459a?sa=X&ved=2ahUKEwj6vKDV-P71AhUUCd4KHcFPDA8Q8gF6BAgeEAE" target="_blank">
+                            <div class="img"><img src="./img/아이슬란드공화국 flag.gif" alt=""></div>
+                            <span>아이슬란드 (+354)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/United+Kingdom/data=!4m2!3m1!1s0x25a3b1142c791a9:0xc4f8a0433288257a?sa=X&ved=2ahUKEwjS-7zr-P71AhWWAd4KHVDcCdkQ8gF6BAgjEAE" target="_blank">
+                            <div class="img"><img src="./img/영국 flag.gif" alt=""></div>
+                            <span>영국 (+44)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Italy/data=!4m2!3m1!1s0x12d4fe82448dd203:0xe22cf55c24635e6f?sa=X&ved=2ahUKEwjz7cv7-P71AhXEet4KHc3VA-sQ8gF6BAgeEAE" target="_blank">
+                            <div class="img"><img src="./img/이탈리아공화국  flag.gif" alt=""></div>
+                            <span>이탈리아 (+39)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Turkey/data=!4m2!3m1!1s0x14b0155c964f2671:0x40d9dbd42a625f2a?sa=X&ved=2ahUKEwjh4PSP-f71AhVZeN4KHRomBgIQ8gF6BAgYEAE" target="_blank">
+                            <div class="img"><img src="./img/터키공화국 flag.gif" alt=""></div>
+                            <span>터키 (+90)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/France/data=!4m2!3m1!1s0xd54a02933785731:0x6bfd3f96c747d9f7?sa=X&ved=2ahUKEwjG0KGi-f71AhURUvUHHYToDf8Q8gF6BAgaEAE" target="_blank">
+                            <div class="img"><img src="./img/프랑스공화국 flag.gif" alt=""></div>
+                            <span>프랑스 (+33)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Hungary/data=!4m2!3m1!1s0x4741837bdf37e4c3:0xc4290c1e1010?sa=X&ved=2ahUKEwi3s7HB-f71AhXVQ_UHHUoXBh8Q8gF6BAgdEAE" target="_blank">
+                            <div class="img"><img src="./img/헝가리 flag.gif" alt=""></div>
+                            <span>헝가리 (+36)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Finland/data=!4m2!3m1!1s0x4681cadf4b32f6dd:0x146d63c75a810?sa=X&ved=2ahUKEwjfj_nc-f71AhUPC94KHSFcDmoQ8gF6BAgSEAE" target="_blank">
+                            <div class="img"><img src="./img/핀란드공화국 flag.gif" alt=""></div>
+                            <span>핀란드 (+358)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.google.com/maps/place/Bulgaria/data=!4m2!3m1!1s0x40a8fec1c85bf089:0xa01269bf4c10?sa=X&ved=2ahUKEwj-zq3x-f71AhUH_GEKHb4DCHsQ8gF6BAgYEAE" target="_blank">
+                            <div class="img"><img src="./img/불가리아공화국 flag.gif" alt=""></div>
+                            <span>불가리아 (+359)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <footer id="footer" class="row">
+            <div class="foot">
+                <img src="./img/f_logo.png" alt="">
+                <p>본 홈페이지의 모든 권리는 외교부에 귀속됩니다.</p>
+            </div>
+        </footer>
+
+        <script src="./js/sub3.js"></script>
+</body>
+
+</html>
