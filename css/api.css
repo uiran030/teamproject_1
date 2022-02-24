@@ -81,6 +81,8 @@ body {position:relative;}
 #main .imgbox img { width: 100%; }
 
 #main .page { margin-top:20px; display: none; }
+#main .page > span > a {color:#aaa;}
+#main .page > span > a.on {color:blue;}
 
 .mentbox{
     height: 80vh;

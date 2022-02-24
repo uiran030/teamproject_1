@@ -21,7 +21,7 @@ function abc(titName,pageno,category){
         },
         success:function(getdata){
             gdata = getdata
-            usedata(getdata, 1)
+            usedata(getdata, pageno)
         },
         error:function(xhr){
             alert(xhr.status + '/' + xhr.errorText)
@@ -76,12 +76,10 @@ function usedata(data, pno){
     //     elem += `<span class="prev">이전</span>`
     // }
 
-    elem += `<div class="page">`
-
     elem += `<span>`
     for (let i = startPage; i <= totalCount && i<startPage+10; i++) {
         if (pno == i) {
-            elem += `<a href="${i}" class="on"> [${i}] </a>`
+            elem += `<a href="${i}" class="on" > [${i}] </a>`
         }  else {
             elem += `<a href="${i}"> [${i}] </a>`
         }
@@ -123,6 +121,7 @@ $('#main').on('click', '.page a',function(){
     var pno= $(this).attr('href')
     category = $('#category').find('option:selected').val()
     $('.databox, .imgbox, .page, .mentbox').remove()
+    $(this).addClass('on').siblings().removeClass('on')
     abc(titName,pno,category)
     return false
 })
