@@ -14,27 +14,44 @@ a { text-decoration: none; color: inherit; }
 
 /* 헤더구역 */
 #header {
+    /* background: hsl(226, 69%, 25%,0.5); */
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
 }
 #header h1 { padding: 30px 50px; }
-#header #nav { width: 700px; }
+#header #nav { width: 800px; }
 #header #nav .depth1 { 
     display: flex; 
     justify-content: right; 
 }
 #header #nav .depth1 li {
-margin-right: 50px;
+margin-right: 40px;
 border-bottom: 2px solid #fff;
-font-size: 13px;
+font-size: 15px;
+position:relative;
 }
+#header #nav .depth1 li::after {
+    content: '';
+    position:absolute;
+    top:0px;
+    left:-20px;
+    width:1px;
+    background:hsl(226, 69%, 25%,0.5);
+    height: 15px;
+    }
+
+    #header #nav .depth1 li:first-child::after{display:none;}
+
 #header #nav .depth1 li:hover { 
     color: #14296C; 
-    border-bottom: 2px solid #14296C; 
+    border-bottom: 2px solid #14296C;     
 }
-
+#header #nav .depth1 li.on{
+    color: #14296C; 
+    border-bottom: 2px solid #14296C;
+}
 
 /* 풋터구역 */
 #footer {

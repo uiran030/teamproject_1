@@ -50,7 +50,7 @@ function usedata(data, pno){
 
     $(data).find('item').each(function(){
         var contentName = $(this).find('content').text()
-        contentName = contentName.replace(/&nbsp;/gi,'').replaceAll('다.','다.<br>').replaceAll('○',' <br>○ ').replaceAll('"',"'").replaceAll('■',' <br>■ ').replaceAll('☞',' <br>☞ ').replaceAll('※',' <br>※ ').replaceAll('음.','음.<br>').replaceAll('함.','함.<br>').replaceAll('임.','임.<br>').replaceAll('●',' <br>● ').replaceAll('▶',' <br>▶ ').replaceAll('o ',' <br>o ').replaceAll('△',' <br>△ ')
+        contentName = contentName.replace(/&nbsp;/gi,'').replaceAll('다.','다. <br> ').replaceAll('○',' <br>○ ').replaceAll('"',"'").replaceAll('■',' <br>■ ').replaceAll('☞',' <br>☞ ').replaceAll('※',' <br>※ ').replaceAll('음.','음.<br>').replaceAll('함.','함.<br>').replaceAll('임.','임.<br>').replaceAll('●',' <br>● ').replaceAll('▶',' <br>▶ ').replaceAll('o ',' <br>o ').replaceAll('△',' <br>△ ')
 
         var newtext = contentName.substr(0,700)
         var contenttit = $(this).find('title').text()
@@ -62,7 +62,7 @@ function usedata(data, pno){
             elem+=`<li><h2>${contenttit}</h2>`
             if (contentName.length>700){
                 elem+=`<p class="txt">${newtext}...</p>`
-                elem+=`<span class="more"><button type="button" data-content="${contentName}" data-title="${contenttit}">더보기<i class="fa-solid fa-angle-right"></i></button></span></li>`
+                elem+=`<span class="more"><button type="button" data-content="${contentName}" data-title="${contenttit}">더보기 <i class="fa-solid fa-angle-right"></i></button></span></li>`
             }else{
                 elem+=`<p class="txt">${contentName}</p></li>`
             }
@@ -79,9 +79,9 @@ function usedata(data, pno){
     elem += `<span>`
     for (let i = startPage; i <= totalCount && i<startPage+10; i++) {
         if (pno == i) {
-            elem += `<a href="${i}" class="on" > [${i}] </a>`
+            elem += `<a href="${i}" class="on" > ${i} </a>`
         }  else {
-            elem += `<a href="${i}"> [${i}] </a>`
+            elem += `<a href="${i}"> ${i} </a>`
         }
     }
     elem += `</span>`
@@ -126,24 +126,6 @@ $('#main').on('click', '.page a',function(){
     return false
 })
 
-$('#main').on('click', '.page .next',function(){
-    if (startPage>10) {
-        startPage -= 10
-    }
-    category = $('#category').find('option:selected').val()
-    $('.databox, .imgbox, .page, .mentbox').remove()
-    abc(titName,startPage,category)
-})
-
-$('#main').on('click', '.page .next',function(){
-    if (startPage<totalCount) {
-        startPage += 10
-    }
-    category = $('#category').find('option:selected').val()
-    $('.databox, .imgbox, .page, .mentbox').remove()
-    abc(titName,startPage,category)
-})
-
 $('#main .btn').on('click',function(){
     titName = $('#title').find('option:selected').val()
     category = $('#category').find('option:selected').val()
@@ -151,6 +133,7 @@ $('#main .btn').on('click',function(){
     $('.databox, .imgbox, .page, .mentbox').remove()
     abc(titName,startPage,category)
 })
+
 
 // 더보기 클릭 시 전체화면
 $('body').on('click', '#main .databox > li > .more > button',function(){

@@ -1,22 +1,27 @@
 @charset "utf-8";
 
-body {position:relative;}
-#main{ padding: 50px; min-height:100%; }
+/* body {position:relative;} */
+#main{ padding: 50px; min-height:100vh; }
 #main h1{ text-align: center; margin-bottom:20px;}
 #main h2 { padding:10px 0; }
 
-#main .searchbox {
-    width: 100%;
-    text-align: center;
+
+/* 로딩화면 */
+#main .loading {
+    height:100%;
+    font-size: 40px;
+    position:fixed;
+    top:0; right:0; left:0; bottom:0;
+    background-color: rgba(0,0,0,0.2);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#main .searchbox input{ 
-    width: 70%; 
-    height:50px; 
-    border-radius: 10px; 
-    padding-left: 20px;
-    vertical-align: middle;
-}
-#main .searchbox label { padding: 30px; font-size: 22px }
+#main .loading i {margin-right:10px;}
+
+
+/*  */
 #main .databox {
     border:1px solid black; 
     padding:10px; 
@@ -44,16 +49,20 @@ body {position:relative;}
 }
 #main .databox li>.more i{ font-size: 12px; }
 
+
+/* 나라이름 선택 */
 #main .search {
     display: flex; 
     align-items: center; 
     justify-content: center;
+    width:100%;
+    margin:0 auto;
 }
-#main .search .searchbox{ width:70%; }
 #main .search .searchbox select{
     width:300px; 
     margin-right: 30px; 
-    height:30px;
+    height:40px;
+    text-align: center;
 }
 #main .search button {
     padding:10px; 
@@ -61,8 +70,10 @@ body {position:relative;}
     background-color:#14296C; 
     color:white; 
     cursor: pointer;
+    border:none;
 }
 
+/* 카테고리 선택 */
 #main #category > ul {
     display: flex; 
     align-items: center; 
@@ -73,6 +84,8 @@ body {position:relative;}
     flex-grow: 1; 
     border:1px solid black
 }
+
+/* 나라이름과 카테고리 선택 후 맨 위에 국기사진 */
 #main .imgbox{
     margin: 30px auto;
     max-width: 400px;
@@ -80,16 +93,12 @@ body {position:relative;}
 }
 #main .imgbox img { width: 100%; }
 
-#main .page { margin-top:20px; display: none; }
-#main .page > span > a {color:#aaa;}
-#main .page > span > a.on {color:blue;}
-
+/* 국기사진 밑으로 api 자료 불러와서 목록 */
 .mentbox{
     height: 80vh;
     text-align: center;
     padding-top:50px;
 }
-
 .showbox{
     display:none;
     width:100%;
@@ -101,19 +110,6 @@ body {position:relative;}
     font-size: 20px;
 }
 
-/* 로딩화면 */
-#main .loading {
-    height:100%;
-    font-size: 40px;
-    position:fixed;
-    top:0; right:0; left:0; bottom:0;
-    background-color: rgba(0,0,0,0.2);
-    color:white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#main .loading i {margin-right:10px;}
 
 /* 더보기 시 나타나는 창 */
 .fxbox{
@@ -152,6 +148,9 @@ body {position:relative;}
     margin : 30px auto 0;
     display: block;
 }
+
+
+/* 더보기 창 닫기 버튼 (마우스) */
 .circle {
     position: absolute;
     top: 0;
@@ -164,7 +163,6 @@ body {position:relative;}
     transform: translate(-50%, -50%);
     z-index: 4;
 }
-
 .circle span {
     display: inline-block;
     position: absolute;
@@ -172,4 +170,24 @@ body {position:relative;}
     left: 50%;
     transform: translate(-50%, -50%);
     cursor:none;
+}
+
+
+/* 페이지 디자인 */
+#main .page { 
+    margin-top:20px; 
+    display: none; 
+    text-align: center;
+}
+#main .page span a {
+    border:1px solid black; 
+    display:inline-block; 
+    padding: 10px; 
+    margin:0 5px; 
+    background:#eee
+}
+#main .page span a.on {
+    color:blue; 
+    background:white; 
+    font-weight: bold;
 }

@@ -29,7 +29,8 @@
         </h1>
         <nav id="nav">
             <ul class="depth1">
-                <li><a href="./api.html">국가별 안전정보</a></li>
+                <li><a href="./index.html">메인 페이지</a></li>
+                <li class="on"><a href="./api.html">국가별 안전정보</a></li>
                 <li><a href="./sub1.html">전세계 코로나 감염자 현황</a></li>
                 <li><a href="./sub2.html">국가별 여행 정보</a></li>
                 <li><a href="./sub3.html">국가코드별 지도</a></li>
@@ -41,7 +42,7 @@
         <h1>국가별 안전정보</h1>
         <div class="search">
             <form class="searchbox">
-                <select name="title" id="title">
+                <select name="title" id="title" class="choicebox">
                     <option value="나라이름 선택">나라이름 선택</option>
                     <option value="과테말라">과테말라</option>
                     <option value="그레나다">그레나다</option>
@@ -143,13 +144,13 @@
                     <option value="헝가리">헝가리</option>
                     <option value="호주">호주</option>
                 </select>
-                <select name="category" id="category">
+                <select name="category" id="category" class="choicebox">
                     <option value="카테고리 선택">카테고리 선택</option>
                     <option value="">전체</option>
-                    <option value="바이러스">바이러스</option>
                     <option value="시위">시위</option>
                     <option value="기상">기상</option>
                     <option value="자연재해">자연재해</option>
+                    <option value="바이러스">바이러스</option>
                 </select>
             </form>
             <button type="button" class="btn">검색</button>
