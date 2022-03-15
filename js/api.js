@@ -11,7 +11,7 @@ function abc(titName,pageno,category){
 
     $.ajax({
         type:'GET',
-        // url: `https://euiran.herokuapp.com/http://apis.data.go.kr/1262000/CountrySafetyService/getCountrySafetyList?serviceKey=Cm6iVvqGBwjh2oznueJPtJ%2Bj2nbXtKNAP5V7ZTvwx2pnzBWlI2hFXHhkuWcOo76C6XJ6iz%2FBVrcJdrFSXsuOaQ%3D%3D&numOfRows=10&pageNo=${pageno}&title=${titName}&content=${category}`,
+        url: `https://euiran.herokuapp.com/http://apis.data.go.kr/1262000/CountrySafetyService/getCountrySafetyList?serviceKey=Cm6iVvqGBwjh2oznueJPtJ%2Bj2nbXtKNAP5V7ZTvwx2pnzBWlI2hFXHhkuWcOo76C6XJ6iz%2FBVrcJdrFSXsuOaQ%3D%3D&numOfRows=10&pageNo=${pageno}&title=${titName}&content=${category}`,
        // url: `https://ryukevin.herokuapp.com/http://apis.data.go.kr/1262000/CountrySafetyService/getCountrySafetyList?serviceKey=Cm6iVvqGBwjh2oznueJPtJ%2Bj2nbXtKNAP5V7ZTvwx2pnzBWlI2hFXHhkuWcOo76C6XJ6iz%2FBVrcJdrFSXsuOaQ%3D%3D&numOfRows=10`,
         dataType:'xml',
         beforeSend:function(){
