@@ -11,7 +11,6 @@ body { background-color: #ddd; font-family: "SeoulHangangM"; }
 a { text-decoration: none; color: inherit; }
 .row { max-width: 1200px; margin: 0 auto; background-color: #fff; }
 
-
 /* 헤더구역 */
 #header {
     /* background: hsl(226, 69%, 25%,0.5); */
@@ -64,3 +63,22 @@ position:relative;
     justify-content: space-between;
 }
 #footer .foot p { width: 85%; }
+
+
+/* 업 버튼 */
+.up_btn{
+    position:fixed;
+    bottom:100px; right:100px;
+    display: none;
+}
+.up_btn.on {display: block;}
+.up_btn button{
+    display: inline-block;
+    border:none;
+    background-color: inherit;
+    cursor: pointer;
+}
+.up_btn button i {
+    font-size: 50px;
+    color:#14296C;
+}

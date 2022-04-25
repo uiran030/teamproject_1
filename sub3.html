@@ -8,6 +8,7 @@
     <title>국가코드별 맵</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/sub3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
 </head>
 
@@ -31,9 +32,18 @@
 
     <div id="main" class="row">
         <h1>국가코드별 맵</h1>
+        <div id="category">
+            <a href="#fir">북미</a>
+            <a href="#sec">중남미</a>
+            <a href="#third">러시아 &middot; 중앙아시아</a>
+            <a href="#four">동북아시아</a>
+            <a href="#five">동남아시아</a>
+            <a href="#six">서남아시아 &middot; 태평양</a>
+            <a href="#seven">유럽</a>
+        </div>
         <div class="image1"></div>
         <div class="text">
-            <div class="box">
+            <div class="box" id="fir">
                 <h2>북미</h2>
                 <ul>
                     <li>
@@ -56,8 +66,7 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="box">
+            <div class="box" id="sec">
                 <h2>중남미</h2>
                 <ul>
                     <li>
@@ -100,7 +109,7 @@
                         <a
                             href="https://www.google.com/maps/place/Dominican+Republic/data=!4m2!3m1!1s0x8eaf8838def1b6f5:0xa6020f24060df7e0?sa=X&ved=2ahUKEwjPjrvRm_71AhXzk1YBHeX6CC8Q8gF6BAgXEAE" target="_blank">
                             <div class="img"><img src="./img/도미니카공화국 flag.bmp" alt="도미니카공화국 flag"></div>
-                            <span>도미니카공화국 (+1-809)</span>
+                            <span>도미니카공화국<br>(+1-809)</span>
                         </a>
                     </li>
                     <li>
@@ -178,7 +187,7 @@
                         <a
                             href="https://www.google.com/maps/place/St+Kitts+%26+Nevis/data=!4m2!3m1!1s0x8c12196ec68a720d:0xdee99ac69a1d86e8?sa=X&ved=2ahUKEwiIvZain_71AhXOzmEKHcZ-DVcQ8gF6BAgdEAE" target="_blank">
                             <div class="img"><img src="./img/세인트키츠네비스연방 flag.gif" alt="세인트키츠네비스 flag"></div>
-                            <span>세인트키츠네비스 (+1-869)</span>
+                            <span>세인트키츠네비스<br>(+1-869)</span>
                         </a>
                     </li>
                     <li>
@@ -206,7 +215,7 @@
                         <a
                             href="https://www.google.com/maps/place/Antigua+and+Barbuda/data=!4m2!3m1!1s0x8c0d6eb96db8d1c1:0x276a3788e18b7994?sa=X&ved=2ahUKEwiCzZ2KoP71AhUUed4KHSi1AFkQ8gF6BAgfEAE" target="_blank">
                             <div class="img"><img src="./img/앤티가바부다 flag.gif" alt="앤티가바부다 flag"></div>
-                            <span>앤티가바부다 (+1-268)</span>
+                            <span>앤티가바부다<br>(+1-268)</span>
                         </a>
                     </li>
                     <li>
@@ -302,7 +311,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="box">
+            <div class="box" id="third">
                 <h2>러시아 &middot; 중앙아시아</h2>
                 <ul>
                     <li>
@@ -349,7 +358,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="box">
+            <div class="box" id="four">
                 <h2>동북아시아</h2>
                 <ul>
                     <li>
@@ -389,7 +398,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="box">
+            <div class="box" id="five">
                 <h2>동남아시아</h2>
                 <ul>
                     <li>
@@ -472,9 +481,8 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="box">
-                <h2>서남아시아태평양</h2>
+            <div class="box" id="six">
+                <h2>서남아시아 &middot; 태평양</h2>
                 <ul>
                     <li>
                         <a
@@ -647,8 +655,7 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="box">
+            <div class="box" id="seven">
                 <h2>유럽</h2>
                 <ul>
                     <li>
@@ -800,18 +807,22 @@
                     </li>
                 </ul>
             </div>
-
-
         </div>
+    </div>
 
-        <footer id="footer" class="row">
-            <div class="foot">
-                <img src="./img/f_logo.png" alt="">
-                <p>본 홈페이지의 모든 권리는 외교부에 귀속됩니다.</p>
-            </div>
-        </footer>
+    <div class="up_btn">
+        <button type="button"><i class="fa-solid fa-circle-arrow-up"></i></button>
+    </div>
 
-        <script src="./js/sub3.js"></script>
+    <footer id="footer" class="row">
+        <div class="foot">
+            <img src="./img/f_logo.png" alt="">
+            <p>본 홈페이지의 모든 권리는 외교부에 귀속됩니다.</p>
+        </div>
+    </footer>
+
+    <script src="./js/sub3.js"></script>
+    <script src="./js/common.js"></script>
 </body>
 
 </html>
