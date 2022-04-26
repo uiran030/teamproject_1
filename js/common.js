@@ -7,6 +7,7 @@ $(window).on('scroll', function(){
     }
 })
 
-$('.up_btn button i').on('click', function(){
+$('.up_btn button i').on('click', function(e){
+    e.preventDefault()
     $('html').animate({scrollTop:0}, '1000');
 })

@@ -1,6 +1,6 @@
 /* 카테고리 선택 시 부드럽게 이동하기위해 smooth 작업함 */
-html{scroll-behavior: smooth;}
-html.on{scroll-behavior: auto;}
+/* html{scroll-behavior: smooth;}
+html.on{scroll-behavior: auto;} */
 
 #main { 
     background-color: #fff; 
